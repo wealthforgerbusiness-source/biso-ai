@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>BISO AI — L'intelligence qui comprend la RDC</title>
+  <meta name="description" content="BISO AI, l'intelligence artificielle qui comprend la RDC." />
+  <meta name="theme-color" content="#0B1F3A" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="data:," />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo-placeholder" aria-label="Logo BISO AI">BA</div>
+      <div class="brand-text">
+        <h1>BISO AI</h1>
+        <p class="slogan">L'intelligence qui comprend la RDC.</p>
+      </div>
+    </div>
+    <div class="lang-switch">
+      <button type="button" class="lang-btn active" data-lang="fr">FR</button>
+      <button type="button" class="lang-btn" data-lang="ln">LN</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="card">
+      <h2>Bienvenue sur BISO AI</h2>
+      <p>Cette page confirme que le frontend est correctement installé et fonctionnel.</p>
+
+      <div class="status-box">
+        <span id="statusLabel">Vérification du serveur…</span>
+        <span id="statusDot" class="dot dot-pending"></span>
+      </div>
+
+      <button id="checkHealthBtn" type="button" class="primary-btn">
+        Tester la connexion au serveur
+      </button>
+    </section>
+
+    <section class="card install-card" id="installCard" hidden>
+      <p>Installez BISO AI sur votre appareil pour un accès plus rapide.</p>
+      <button id="installBtn" type="button" class="secondary-btn">Installer l'application</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> BISO AI — Projet en développement</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
